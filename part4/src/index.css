@@ -1,0 +1,24 @@
+.list{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    position: relative
+}
+
+.item{
+    display: flex;
+    margin: 2%;
+    min-height: 5rem;
+}
+
+.job-id, .job-name, .job-area, .job-employer, .job-reqs{
+    flex: 1 1 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.div-wrapper {
+    top:50%; 
+    height:auto; 
+}
