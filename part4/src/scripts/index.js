@@ -36,7 +36,6 @@ const handleInfiniteScroll = () => {
         if (endOfPage) {
             addItems();
         }
-
-    }, 1000);
+    }, 500);
 };
 window.addEventListener("scroll", handleInfiniteScroll);
