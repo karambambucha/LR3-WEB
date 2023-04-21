@@ -11,7 +11,7 @@
     min-height: 5rem;
 }
 
-.job-id, .job-name, .job-area, .job-employer, .job-reqs{
+.job-id, .job-name, .job-area, .job-employer, .job-salary{
     flex: 1 1 10rem;
     display: flex;
     justify-content: center;

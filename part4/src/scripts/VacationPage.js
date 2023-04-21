@@ -4,12 +4,12 @@ function getVacationPage(Vacation){
     let divName = document.createElement("a");
     let divArea = document.createElement("div");
     let divEmployer = document.createElement("div");
-    let divRequirements = document.createElement("div");
+    let divSalary = document.createElement("div");
 
     divID.innerHTML = "ID вакансии: " + Vacation.id
     divArea.innerHTML = "Местоположение: " + Vacation.area
     divEmployer.innerHTML = "Работодатель: " + Vacation.employer
-    divRequirements.innerHTML = "Зарплата: " + Vacation.salary.from + "-" + Vacation.salary.to + " " + Vacation.salary.currency
+    divSalary.innerHTML = "Зарплата: " + Vacation.salary.from + "-" + Vacation.salary.to + " " + Vacation.salary.currency
     divName.href = Vacation.vacationLink;
     divName.innerHTML = Vacation.name
 
@@ -17,13 +17,13 @@ function getVacationPage(Vacation){
     divWrapper.append(divArea);
     divWrapper.append(divEmployer);
     divWrapper.append(divName);
-    divWrapper.append(divRequirements);
+    divWrapper.append(divSalary);
 
     divWrapper.className = "border border-primary item div-wrapper"
     divID.className = "border border-secondary job-id"
     divName.className = "border border-secondary job-name"
     divArea.className = "border border-secondary job-area"
-    divRequirements.className = "border border-secondary job-reqs"
+    divSalary.className = "border border-secondary job-salary"
     divEmployer.className = "border border-secondary job-employer"
 
     return divWrapper
